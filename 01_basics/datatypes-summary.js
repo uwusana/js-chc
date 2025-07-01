@@ -16,7 +16,7 @@ let userEmail; //undefined
 const id = Symbol('123')
 const anotherId = Symbol('123')
 
-//console.log(id===anotherId);
+console.log(id===anotherId);
 
 const bigNumber = 45346825685687629n  //bigInt
 
@@ -37,3 +37,29 @@ const myFunction =function(){
 console.log(typeof bigNumber); //bigint
 console.log(typeof myFunction);
 
+
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+//STACK(primitive) AND HEAP(non primitive) MEMORY
+
+let myYoutubename = "uwusanadotcom" //stored in stack
+
+let anothername = myYoutubename
+anothername = "miomommydotcom"
+
+console.log(myYoutubename);
+console.log(anothername);
+
+let userOne = {
+    email:"user@google.com",
+    upi:"user@ybl"
+}                               //stored in heap
+
+let userTwo = userOne
+
+userTwo.email = "mio@google.com"
+
+console.log(userOne.email);
+console.log(userTwo.email);
+
+// stack provides copy of data and heap provides reference of original data. So whenever there is a change in data stored in heap it is reflected both in the og variable as well as the new variable.
+// however in stack stored data, the original variable is reserved as it provided a copy of itself
