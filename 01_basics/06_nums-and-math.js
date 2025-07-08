@@ -24,3 +24,20 @@ console.log(Number.MIN_VALUE)
 console.log(Number.MAX_SAFE_INTEGER)
 
 //+++++++++++++++++++MATHS++++++++++++++++++++++
+console.log(Math);
+console.log(Math.abs(-4)); //negative -> positive only
+console.log(Math.round(4.3));
+console.log(Math.ceil(4.3)); //not used much
+console.log(Math.floor(4.3)); //not used much
+console.log(Math.min(4, 5 ,2, 7));
+
+console.log(Math.random()); //values will always be between 0 and 1
+console.log((Math.random() * 10) +1); 
+console.log(Math.floor(Math.random() * 10) +1); //to get only one digit
+
+const min = 10
+const max = 20
+
+console.log(Math.floor(Math.random() * (max - min + 1)) + min); //to get random numbers within a range
+
+
