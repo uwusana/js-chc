@@ -61,9 +61,9 @@ let str3 = str1 + str2
 // console.log(str3);
 
 // console.log("1" + 2);
-// console.log(1 + "2");
-// console.log("1" + 2 + 2);
-// console.log(1 + 2 + "2");
+// console.log(1 + "2"); //output: 12
+// console.log("1" + 2 + 2); //output:122
+// console.log(1 + 2 + "2"); //output:32 special ECMA language dependent
 
 // console.log(3+4*5%3); //not recommended for dev work
 
