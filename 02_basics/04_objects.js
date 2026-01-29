@@ -63,3 +63,39 @@ console.log(Object.entries(tinderUser));
 
 console.log(tinderUser.hasOwnProperty('isLoggedIn'));
 //returns a boolean value, checks whether a field is available in the specified object or not
+
+
+
+
+
+const course = {
+    coursename : "js in hindi",
+    courseprice : "999",
+    courseInstructor : "hitesh"
+}
+
+console.log(course.courseInstructor); //pretty lengthy instead we do:
+
+const {courseInstructor} = course //object destructure, we can also do: 
+const {courseInstructor : instructor } = course
+
+console.log(instructor);
+
+
+//=====API stuff========
+//JSON structure: (also objects, without names)
+
+// {
+//     "name":"mio",
+//     "coursename": "js in hindi",
+//     "price": "free"
+// }
+
+//it can also come as an array of objects like:
+[
+    {},
+    {},
+    {}
+]
+
+
