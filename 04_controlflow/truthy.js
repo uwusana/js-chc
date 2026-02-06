@@ -49,5 +49,16 @@ val1 = 5 ?? 10
 console.log(val1); //5
 
 let val2;
-val2 = null ?? 10
-console.log(val2); //10
+//val2 = null ?? 10
+//val2 = undefined ?? 10 
+//console.log(val2); //10
+
+val2 = null ?? 10 ?? 20
+
+//ternary operator
+//syntax:
+// condition ? true : false
+
+const iceTeaPrice = 100
+iceTeaPrice <= 80 ? console.log("less than 80") : console.log("more than 80");
+
