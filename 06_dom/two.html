@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DOM | Coffee with Mio</title>
 </head>
-<body>
+<body style="background-color: #212121; color: #fff; font-family: Arial, sans-serif; padding: 20px;">
     <div class="parent">
         <div class="day">Monday</div>
         <div class="day">Tuesday</div>
@@ -13,4 +13,29 @@
         <div class="day">Thursday</div>
     </div>
 </body>
+<script>
+    const parent = document.querySelector('.parent')
+    console.log(parent);
+    console.log(parent.children); //returns HTMLCollection- array like property
+    console.log(parent.children[2]); // returns the third child elements
+    console.log(parent.children[2].innerHTML); // returns the innerHTML of the third child element
+
+    //we can access the children of the parent element using the children property, which returns an HTMLCollection. We can then access individual child elements using their index, starting from 0. In this case, we accessed the third child element (Wednesday) and logged its innerHTML to the console.
+
+    for(let i=0 ; i< parent.children.length; i++){
+        console.log(parent.children[i].innerHTML);
+    } 
+    // This loop iterates through all the child elements of the parent element and logs their innerHTML to the console. It uses the length property of the HTMLCollection to determine how many child elements there are, and accesses each child element using its index.
+
+    parent.querySelector('.day').style.color =  'pink'; // changes the color of the first child element to pink
+    parent.children[3].style.color = 'green'; // changes the color of the fourth child element to green
+
+    console.log(parent.firstElementChild);
+    console.log(parent.lastElementChild);
+    // The firstElementChild property returns the first child element of the parent element, while the lastElementChild property returns the last child element. In this case, we logged both properties to the console to see which elements they refer to.
+
+    const dayOne = document.querySelector('.day');
+    console.log(dayOne);
+    console.log(dayOne.parentElement); // returns the parent element of the first child element
+</script>
 </html>
