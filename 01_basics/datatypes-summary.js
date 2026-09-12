@@ -6,6 +6,7 @@ JavaScript is a dynamic language and not static, which means that variables can 
 */
 
 //PRIMITIVE DATA TYPES
+//(String, Number, Boolean, null, undefined, Symbol, BigInt )
 //====================
 const score = 100 //data type isnt defined
 const scoreValue = 100.3
@@ -21,7 +22,8 @@ console.log(id===anotherId);
 const bigNumber = 45346825685687629n  //bigInt
 
 
-//NON PRIMITIVE DATA TYPES
+//NON PRIMITIVE (reference) DATA TYPES
+//( Arrays, Objects, Functions  )
 //========================
 
 const sanrio = ["hello kitty", "kuromi", "my melody"];
@@ -37,7 +39,22 @@ const myFunction =function(){
 console.log(typeof bigNumber); //bigint
 console.log(typeof myFunction);
 
+/* 
+    Return type of variables in JavaScript
+1) Primitive Datatypes
+       Number => number
+       String  => string
+       Boolean  => boolean
+       null  => object
+       undefined  =>  undefined
+       Symbol  =>  symbol
+       BigInt  =>  bigint
 
+2) Non-primitive Datatypes
+       Arrays  =>  object
+       Function  =>  function
+       Object  =>  object
+*/
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 //STACK(primitive) AND HEAP(non primitive) MEMORY
 

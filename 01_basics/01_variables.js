@@ -1,5 +1,5 @@
-const accountId = 144553
-let accountEmail = "mio@google.com"
+const accountId = 144553 // const=constant, variables cannot be changed once declared.
+let accountEmail = "mio@google.com" //let-> can be modified after it is declared
 var accountPassword = "12345"
 accountCity = "Jaipur"  //not recommended although it works
 let accountState; //returns undefined

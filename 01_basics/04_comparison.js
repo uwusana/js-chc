@@ -6,8 +6,7 @@
 //problem occurs when comparing different data types
 
 // console.log("2">1);
-// console.log("02">1); 
-//result is not predictable
+// console.log("02">1);  ->returns true because js automatically converts string to number but the result is not predictable
 //AVOID
 // console.log(null>0); //f
 // console.log(null==0); //f
